@@ -9,7 +9,6 @@ import About from "./components/about/About";
 function App() {
   return (
     <Router>
-      {/* La navbar à changer */}
       <Navbar></Navbar>
       <Switch>
         {/* Les routes + les composants hna à définir */}
