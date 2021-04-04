@@ -5,6 +5,6 @@ const Navbar = () => {
   return <div style={navbarStyle}>Navbar hh</div>;
 };
 
-const navbarStyle = { height: "30px", backgroundColor: "cyan" };
+const navbarStyle = { position:"absolute",top:0,height: "30px", width:"100%", backgroundColor: "cyan" };
 
 export default Navbar;
