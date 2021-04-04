@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";

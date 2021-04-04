@@ -1,12 +1,36 @@
-.hero{
-    background-color: darkblue;
+$hero-bg : url("./../../../assets/bg.png");
+
+.hero {
+    background: linear-gradient(0deg, rgba(10, 31,59, 0.85), rgba(10, 31,59, 0.85)), $hero-bg;
+    background-size: cover;
+
     height: 100vh;
     display: flex;
     align-items: center;
+    .slogancontainer {
+        margin : auto;
 
-    .slogan {
-        color:white;
-        font-size: 49pt;
+        .slogan {
+            display: inline-block;
+            color: white;
+            font-size: 47pt;
+            font-family: "Monterrast";
+            span {
+                color: #11bbf5;
+            }
+        }
+        
+        .button {
+            display: inline-block;
+            border-radius: 0;
+            margin-top: 50px;
+            padding: 5px 20px 5px 20px;
+        }
+        
     }
-
+    .imagecontainer {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
 }

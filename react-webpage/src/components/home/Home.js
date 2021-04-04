@@ -8,6 +8,6 @@ const Home = () => {
   </div>;
 };
 
-const homeStyle = { height: "100px", backgroundColor: "orange" };
+const homeStyle = { backgroundColor: "orange" };
 
 export default Home;
