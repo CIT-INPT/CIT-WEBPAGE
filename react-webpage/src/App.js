@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./components/layout/Footer";
+import Footer from "./components/layout/footer/index";
 import Navbar from "./components/layout/navbar/index";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
+
 
 // On définit hna la structure de l'app
 function App() {
@@ -17,8 +18,9 @@ function App() {
       </Switch>
       {/* Le footer à changer */}
       <Footer></Footer>
+
     </Router>
   );
 }
 
-export default App;
+export default App
