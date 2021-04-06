@@ -5,6 +5,6 @@ const Footer = () => {
   return <div style={footerStyle}>Le footer hh</div>;
 };
 
-const footerStyle = { position:"relative",height: "30px", backgroundColor: "lime" };
+const footerStyle = { position: "relative", height: "30px", backgroundColor: "lime" };
 
 export default Footer;
