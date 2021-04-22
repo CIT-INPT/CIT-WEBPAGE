@@ -4,7 +4,6 @@ import citlogo_white from "./../../../assets/citlogo_white.svg";
 import "./index.scss";
 import { themes } from "../../../helpers/themes";
 import { Link, useLocation } from "react-router-dom";
-// bach tkhdem had icons khask d5el "npm install react-icons"
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 // TODO A changer, aykhsskom tsawbo plusieurs composants, machi b darora tktbo style kif ktebt hna
@@ -63,13 +62,6 @@ const Footer = (props) => {
                   color="#c20079"
                 ></FaInstagram>
               </a>
-              {/* <a className="icon" target="_" href="#">
-                <FaTwitter
-                  className="icon"
-                  size="2.5em"
-                  color="#1c9cea"
-                ></FaTwitter>
-              </a> */}
               <a
                 className="icon"
                 target="_"
