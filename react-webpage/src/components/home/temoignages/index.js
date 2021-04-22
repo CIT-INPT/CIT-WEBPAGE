@@ -14,7 +14,6 @@ const Temoignages = () => {
           <span style={styleSpan}>Témoignages</span>
         </h1>
         <div className="row">
-          {/* TODO logowat crisis/henceforth */}
           <CardItem />
           <CardItem />
           <CardItem />
@@ -27,8 +26,8 @@ const Temoignages = () => {
 const CardItem = () => {
   return (
     <div className="col-4">
-      <div class="card border-0 card-0">
-        <div class="text-center">
+      <div className="card border-0 card-0">
+        <div className="text-center">
           {" "}
           <img
             src="https://avatars.dicebear.com/api/male/azerty.svg"
@@ -36,10 +35,10 @@ const CardItem = () => {
             alt="person"
           />{" "}
         </div>
-        <h6 class="font-weight-bold mt-5">Une personne</h6>{" "}
-        <small class="mb-2">Son poste</small>
+        <h6 className="font-weight-bold mt-5">Une personne</h6>{" "}
+        <small className="mb-2">Son poste</small>
         <hr width="50%" />
-        <p class="content mt-2 mb-0">
+        <p className="content mt-2 mb-0">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod incididunt ut labore et dolore magna aliqua.
           <br />

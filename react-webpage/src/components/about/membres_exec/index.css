@@ -1,7 +1,8 @@
 .card-0 {
   color: white;
-  background-color: #21354d;
+  /* background-color: #21354d; */
   border-radius: 20px;
+  position: relative;
   margin-top: 80px;
   padding: 30px;
 }

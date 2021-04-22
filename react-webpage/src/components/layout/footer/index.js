@@ -97,11 +97,7 @@ const Footer = (props) => {
  */
 const CustomLink = ({ theme, to, children }) => {
   return (
-    <Link
-      className="FooterLink"
-      style={theme === "dark" ? { color: "white" } : { color: "#0a1f3b" }}
-      to={to}
-    >
+    <Link className="FooterLink" style={{ color: "white" }} to={to}>
       {children}
     </Link>
   );
