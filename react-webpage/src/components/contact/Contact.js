@@ -4,40 +4,48 @@ const Contact = () => {
       className="container d-flex flex-column align-items-center"
       style={{ marginTop: "6em", marginBottom: "6em" }}
     >
-      <h1 className="display-4 text-uppercase mb-5">
+      <h1 className="display-4 text-uppercase mb-3">
         contactez <span style={styleSpan}>nous</span>
       </h1>
-      <div className="d-flex align-items-center justify-content-between">
-        <div style={{ flex: 2 }}>
-          <p className="display-4">IDEH</p>
-          <p className="h5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            quo quod impedit aperiam? Vitae enim, asperiores tempora sit soluta
-            saepe consequuntur est omnis nihil provident nulla atque magnam
-            nostrum quos sequi non quibusdam ipsum modi mollitia cupiditate
-            porro corporis nam.
-          </p>
-        </div>
-        <div style={{ flex: 1 }} className="text-center">
-          {/* TODO Change to ideh pics */}
-          <div style={{ backgroundColor: "red" }}>test</div>
-        </div>
-      </div>
-      <br />
-      <div className="d-flex align-items-center">
-        <div style={{ flex: 2, order: 1 }}>
-          <p className="display-4">JNJD</p>
-          <p className="h5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            quo quod impedit aperiam? Vitae enim, asperiores tempora sit soluta
-            saepe consequuntur est omnis nihil provident nulla atque magnam
-            nostrum quos sequi non quibusdam ipsum modi mollitia cupiditate
-            porro corporis nam.
-          </p>
-        </div>
-        <div style={{ flex: 1 }} className="text-center">
-          {/* TODO Change to jnjd pics */}
-          <div style={{ backgroundColor: "red" }}>test</div>
+      <div className="col-8">
+        <div className="card card-0">
+          <form>
+            <div class="form-group mb-3">
+              <h3 className="font-weight-bold text-center ">Nom :</h3>{" "}
+              <input type="text" class="form-control" placeholder="Votre nom" />
+            </div>
+            <div class="form-group mb-3">
+              <h3 className="font-weight-bold text-center ">Email :</h3>{" "}
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Votre email"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <h3 className="font-weight-bold text-center ">Sujet :</h3>{" "}
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Votre sujet"
+              />
+            </div>{" "}
+            <div class="form-group mb-3">
+              <h3 className="font-weight-bold text-center ">Message :</h3>{" "}
+              <textarea
+                class="form-control"
+                placeholder="Votre message"
+                style={{ minHeight: "10em" }}
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-light"
+              style={{ width: "100%" }}
+            >
+              Envoyer
+            </button>
+          </form>
         </div>
       </div>
     </div>
