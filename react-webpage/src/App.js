@@ -5,6 +5,8 @@ import Navbar from "./components/layout/navbar/index";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Partners from "./components/partners/Partners";
+import Events from "./components/events/Events";
+import Contact from "./components/contact/Contact";
 
 // On définit hna la structure de l'app
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/partners" component={Partners} />
+        <Route exact path="/events" component={Events} />
+        <Route exact path="/contact" component={Contact} />
       </Switch>
       {/* Le footer à changer */}
       <Footer></Footer>

@@ -10,7 +10,7 @@ const Partners = () => {
         Nos <span style={styleSpan}>partenaires</span>
       </h1>
       <div className="d-flex align-items-center justify-content-between">
-        <div style={{ flex: 2 }}>
+        <div style={{ marginRight: "10px", flex: 2 }}>
           <p className="display-4">CRISIS</p>
           <p className="h5 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -26,7 +26,7 @@ const Partners = () => {
       </div>
       <br />
       <div className="d-flex align-items-center">
-        <div style={{ flex: 2, order: 1 }}>
+        <div style={{ marginLeft: "10px", flex: 2, order: 1 }}>
           <p className="display-4">HENCEFORTH</p>
           <p className="h5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
