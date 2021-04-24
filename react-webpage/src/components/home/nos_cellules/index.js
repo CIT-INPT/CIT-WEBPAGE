@@ -52,7 +52,7 @@ const NosCellules = () => {
           type="button"
           class="btn btn-dark button"
           style={{ backgroundColor: "#0a4996" }}
-          to="/cellules"
+          to="/about"
         >
           VOIR PLUS
         </Link>

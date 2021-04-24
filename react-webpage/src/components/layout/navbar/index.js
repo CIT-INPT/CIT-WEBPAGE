@@ -1,12 +1,27 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import citlogo_dark from "./../../../assets/citlogo_dark.svg";
 import citlogo_white from "./../../../assets/citlogo_white.svg";
 import "./index.scss";
 import { themes } from "./../../../helpers/themes";
 import { Link, useLocation } from "react-router-dom";
+import "./index.scss";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+} from "reactstrap";
 
-// TODO A changer, aykhsskom tsawbo plusieurs composants, machi b darora tktbo style kif ktebt hna
-const Navbar = (props) => {
+const NavbarItem = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [theme, setTheme] = useState("dark");
 
@@ -14,46 +29,61 @@ const Navbar = (props) => {
     setTheme(themes[location.pathname]);
   }, [props, location]);
 
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="navbar navbar-dark navbar-expand-lg w-100 citnav">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          <img
-            src={theme === "dark" ? citlogo_white : citlogo_dark}
-            width="50"
-            height="50"
-            alt=""
+    <div>
+      <Navbar
+        dark
+        style={{ backgroundColor: theme === "dark" ? "#21354D" : "#11bbf5" }}
+        expand="lg"
+        className="w-100 navbar-dark citnav"
+      >
+        <div className="container">
+          <NavbarBrand>
+            <Link className="navbar-brand" to="/">
+              <img
+                src={theme === "dark" ? citlogo_white : citlogo_dark}
+                width="50"
+                height="50"
+                alt=""
+              />
+            </Link>
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={toggle}
+            style={{
+              borderColor: theme === "dark" ? "#fff" : "#21354D",
+            }}
+            className="navbar-toggler-light"
           />
-        </Link>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav links">
-            <CustomLink theme={theme} to="/about/">
-              About
-            </CustomLink>
-            <CustomLink theme={theme} to="/partners/">
-              Partners
-            </CustomLink>
-            <CustomLink theme={theme} to="/events/">
-              Events
-            </CustomLink>
-            <CustomLink theme={theme} to="/contact/">
-              Contact
-            </CustomLink>
-          </ul>
+          <Collapse isOpen={isOpen} navbar id="navbarNav">
+            <Nav className="ml-auto links" navbar>
+              <NavItem>
+                <CustomLink theme={theme} to="/about/">
+                  About
+                </CustomLink>
+              </NavItem>
+              <NavItem>
+                <CustomLink theme={theme} to="/partners/">
+                  Partners
+                </CustomLink>
+              </NavItem>
+              <NavItem>
+                <CustomLink theme={theme} to="/events/">
+                  Events
+                </CustomLink>
+              </NavItem>
+              <NavItem>
+                <CustomLink theme={theme} to="/contact/">
+                  Contact
+                </CustomLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
         </div>
-      </div>
-    </nav>
+      </Navbar>
+    </div>
   );
 };
 
@@ -72,4 +102,4 @@ const CustomLink = ({ theme, to, children }) => {
   );
 };
 
-export default Navbar;
+export default NavbarItem;

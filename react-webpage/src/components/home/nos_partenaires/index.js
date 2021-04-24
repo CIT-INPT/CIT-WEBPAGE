@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import henceforthLogo from "../../../assets/henceforth.png";
 
 const NosPartenaires = () => {
@@ -7,7 +8,7 @@ const NosPartenaires = () => {
         className="container d-flex flex-column align-items-center"
         style={{
           marginTop: "6em",
-          marginBottom: "6em",
+          marginBottom: "5em",
         }}
       >
         <h1
@@ -23,7 +24,17 @@ const NosPartenaires = () => {
           <CrisisLogo />
           <img src={henceforthLogo} style={{ width: "15em" }} alt="" />
         </div>
-      </div>
+        <div className="text-center mt-3">
+          <Link
+            type="button"
+            class="btn button"
+            style={{ backgroundColor: "#11bbf5" }}
+            to="/cellules"
+          >
+            VOIR PLUS
+          </Link>
+        </div>
+      </div>{" "}
     </div>
   );
 };
