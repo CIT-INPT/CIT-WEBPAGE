@@ -4,7 +4,7 @@ const Partners = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "6em", marginBottom: "6em" }}
+      style={{ marginTop: "8em", marginBottom: "6em" }}
     >
       <h1 className="display-4 text-uppercase mb-5">
         Nos <span style={styleSpan}>partenaires</span>

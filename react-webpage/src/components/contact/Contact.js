@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "6em", marginBottom: "6em" }}
+      style={{ marginTop: "8em", marginBottom: "6em" }}
     >
       <h1 className="display-4 text-uppercase mb-3">
         contactez <span style={styleSpan}>nous</span>
@@ -11,11 +11,11 @@ const Contact = () => {
         <div className="card card-0">
           <form>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold text-center ">Nom :</h3>{" "}
+              <h3 className="font-weight-bold mb-3">Nom :</h3>{" "}
               <input type="text" class="form-control" placeholder="Votre nom" />
             </div>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold text-center ">Email :</h3>{" "}
+              <h3 className="font-weight-bold mb-3">Email :</h3>{" "}
               <input
                 type="email"
                 class="form-control"
@@ -23,7 +23,7 @@ const Contact = () => {
               />
             </div>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold text-center ">Sujet :</h3>{" "}
+              <h3 className="font-weight-bold mb-3">Sujet :</h3>{" "}
               <input
                 type="text"
                 class="form-control"
@@ -31,7 +31,7 @@ const Contact = () => {
               />
             </div>{" "}
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold text-center ">Message :</h3>{" "}
+              <h3 className="font-weight-bold mb-3">Message :</h3>{" "}
               <textarea
                 class="form-control"
                 placeholder="Votre message"

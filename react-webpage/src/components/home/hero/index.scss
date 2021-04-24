@@ -3,7 +3,7 @@ $hero-bg : url("./../../../assets/bg.png");
 .hero {
     background: linear-gradient(0deg, rgba(10, 31,59, 0.85), rgba(10, 31,59, 0.85)), $hero-bg;
     background-size: cover;
-
+    padding: 5rem;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -25,6 +25,7 @@ $hero-bg : url("./../../../assets/bg.png");
             border-radius: 0;
             margin-top: 50px;
             padding: 5px 20px 5px 20px;
+            font-weight: 600;
         }
         
     }

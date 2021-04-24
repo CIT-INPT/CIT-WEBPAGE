@@ -28,24 +28,31 @@ const NosCellules = () => {
         <ItemCellule desc="cellule algorithmique" ord={2}>
           <FaLaptop style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Web">
           <FaCode style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Securité" ord={2}>
           <FaUserSecret style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Mobile">
           <FaMobileAlt style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Design" ord={2}>
           <FaPencilRuler style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Médiatisation">
           <FaBullhorn style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Technique" ord={2}>
           <FaWrench style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>
+        <br/>
         <ItemCellule desc="Cellule Prospection">
           <FaUsers style={{ flex: 1 }} size="130px" color="#11bbf5" />
         </ItemCellule>

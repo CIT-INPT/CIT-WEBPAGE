@@ -6,14 +6,14 @@ const Events = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "6em", marginBottom: "6em" }}
+      style={{ marginTop: "8em", marginBottom: "6em" }}
     >
       <h1 className="display-4 text-uppercase mb-5">
         Nos <span style={styleSpan}>événements</span>
       </h1>
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
-          <div style={{ marginRight: "10px", flex: 2 }}>
+          <div style={{ marginRight: "5rem", flex: 2 }}>
             <p className="display-4">IDEH</p>
             <p className="h5 ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
@@ -34,7 +34,7 @@ const Events = () => {
       <br />
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
-          <div style={{ marginLeft: "10px", flex: 2, order: 1 }}>
+          <div style={{ marginLeft: "5rem", flex: 2, order: 1 }}>
             <p className="display-4">JNJD</p>
             <p className="h5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
