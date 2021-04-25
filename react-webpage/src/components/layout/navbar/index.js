@@ -35,7 +35,6 @@ const NavbarItem = (props) => {
     <div>
       <Navbar
         dark
-        style={{ backgroundColor: theme === "dark" ? "#21354D" : "#11bbf5" }}
         expand="lg"
         className="w-100 navbar-dark citnav"
       >

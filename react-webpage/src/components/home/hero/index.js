@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import HeartIcon from "../../../assets/HeartIcon";
 import citlogo from "./../../../assets/citlogo.svg";
 import "./index.scss";
-
+import LineCircle from "./../../../assets/line_circle.svg";
 const Hero = () => {
   return (
-    <div className="hero">
+    <div id="hero">
+    <div className="hero" >
       <div className="container">
         <div class="row">
           <div class="col-8 slogancontainer">
@@ -22,6 +24,23 @@ const Hero = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className="wepresent">
+          
+          
+
+                    <div className="container rectangle" >
+                    <div className="lineCircle" >
+                                <img src={LineCircle} width="200" alt="line circle icon" />
+                        </div>
+                        <h2 className="titles">
+                            We'd <HeartIcon width="50" /> to present ourselves
+                        </h2>
+                        <h2 className="titles">
+                            Don't forget to reach out too!
+                        </h2>
+                    </div>
+        </div>
     </div>
   );
 };

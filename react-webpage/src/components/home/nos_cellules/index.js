@@ -14,7 +14,7 @@ const NosCellules = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "6em", marginBottom: "6em" }}
+      id="nos_cellules"
     >
       <h1 className="display-4 text-uppercase mb-5">
         nos <span style={styleSpan}>cellules</span>

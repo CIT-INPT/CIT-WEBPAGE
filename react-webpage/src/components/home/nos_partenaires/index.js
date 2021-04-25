@@ -3,13 +3,10 @@ import henceforthLogo from "../../../assets/henceforth.png";
 
 const NosPartenaires = () => {
   return (
-    <div className="py-4" style={{ backgroundColor: "#21354D" }}>
+    <div  style={{ backgroundColor: "#21354D" }}>
       <div
         className="container d-flex flex-column align-items-center"
-        style={{
-          marginTop: "6em",
-          marginBottom: "5em",
-        }}
+        id="nos_partenaires"
       >
         <h1
           className="display-4 text-uppercase mb-5"

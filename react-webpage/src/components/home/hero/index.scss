@@ -1,7 +1,7 @@
 $hero-bg : url("./../../../assets/bg.png");
 
 .hero {
-    background: linear-gradient(0deg, rgba(10, 31,59, 0.85), rgba(10, 31,59, 0.85)), $hero-bg;
+    background: linear-gradient(0deg, rgba(10, 31,59, 1), rgba(10, 31,59, 0.85)), $hero-bg;
     background-size: cover;
     padding: 5rem;
     height: 100vh;
@@ -34,4 +34,28 @@ $hero-bg : url("./../../../assets/bg.png");
         justify-content: flex-end;
     }
     
+}
+
+.wepresent {
+    background: linear-gradient(180deg, rgba(10, 31,59, 1) 50%, #F9F9F9 50%);
+
+    .rectangle {
+        background-color: #07456F;
+        text-align: center;
+        border-radius: 10px;
+        padding: 50px;
+        position: relative;
+        width: 70%;
+    
+    }
+    .titles {
+        color: #f9f9f9;
+        font-size: 51px;
+        padding-bottom: 10px;
+    }
+    .lineCircle {
+        position: absolute;
+        left: -100px;
+        top: -70px;
+    }
 }

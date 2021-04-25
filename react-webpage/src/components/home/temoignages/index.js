@@ -2,13 +2,10 @@ import "./index.css";
 
 const Temoignages = () => {
   return (
-    <div className="py-4">
+    <div >
       <div
         className="container d-flex flex-column align-items-center"
-        style={{
-          marginTop: "6em",
-          marginBottom: "6em",
-        }}
+        id="temoignages"
       >
         <h1 className="display-4 text-uppercase mb-5">
           <span style={styleSpan}>Témoignages</span>

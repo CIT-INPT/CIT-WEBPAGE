@@ -2,7 +2,7 @@ const AboutUs = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "10em", marginBottom: "6em" }}
+      id="about_us"
     >
       <h1 className="display-4 text-uppercase mb-5">About us</h1>
       <p className="text-center h4">
