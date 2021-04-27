@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./index.scss";
 import {
   FaLaptop,
   FaCode,
@@ -13,10 +14,10 @@ import {
 const NosCellules = () => {
   return (
     <div
-      className="container d-flex flex-column align-items-center"
+      className="container d-flex flex-column align-items-center nos_cellules"
       id="nos_cellules"
     >
-      <h1 className="display-4 text-uppercase mb-5">
+      <h1 className="display-4 text-uppercase mb-5 title">
         nos <span style={styleSpan}>cellules</span>
       </h1>
       <div className="row mb-3">

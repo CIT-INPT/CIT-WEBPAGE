@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import henceforthLogo from "../../../assets/henceforth.png";
+import "./index.scss";
 
 const NosPartenaires = () => {
   return (
-    <div  style={{ backgroundColor: "#21354D" }}>
+    <div className="nos_partenaires">
       <div
-        className="container d-flex flex-column align-items-center"
+        className="container d-flex flex-column align-items-center "
         id="nos_partenaires"
       >
         <h1
-          className="display-4 text-uppercase mb-5"
+          className="display-4 text-uppercase mb-5 title"
           style={{ color: "white" }}
         >
           nos <span style={styleSpan}>Partenaires</span>

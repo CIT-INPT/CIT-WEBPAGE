@@ -1,13 +1,13 @@
-import "./index.css";
+import "./index.scss";
 
 const Temoignages = () => {
   return (
-    <div >
+    <div className="temoignages" >
       <div
         className="container d-flex flex-column align-items-center"
         id="temoignages"
       >
-        <h1 className="display-4 text-uppercase mb-5">
+        <h1 className="display-4 text-uppercase mb-5 title">
           <span style={styleSpan}>Témoignages</span>
         </h1>
         <div className="row">
