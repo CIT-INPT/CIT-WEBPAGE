@@ -24,10 +24,16 @@ const NavbarItem = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const [theme, setTheme] = useState("dark");
+  const [size,setSize] = useState(window.innerWidth)
 
   useEffect(() => {
-    setTheme(themes[location.pathname]);
-  }, [props, location]);
+    setSize(window.innerWidth)
+    
+    if(size <1000)
+      setTheme("dark")
+    else
+      setTheme(themes[location.pathname]);
+  }, [props, location,size]);
 
   const toggle = () => setIsOpen(!isOpen);
 

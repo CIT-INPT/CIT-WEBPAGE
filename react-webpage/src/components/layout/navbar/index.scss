@@ -15,3 +15,26 @@
         }
     }
 }
+
+
+
+$small: 300px;
+$medium: 1000px;
+
+
+  @media screen and (max-width: $small) {
+  }
+  @media screen and (max-width: $medium) {
+    .citnav{
+        background-color: #081f37;
+        color:white
+        .links{
+            margin-left: auto;
+            .link{
+                margin-left: 50px;
+                font-weight: 600;
+                color:white;
+            }
+        }
+    }
+  }
