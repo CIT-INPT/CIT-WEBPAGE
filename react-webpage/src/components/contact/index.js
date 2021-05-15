@@ -9,40 +9,37 @@ const Contact = () => {
       <h1 className="display-4 text-uppercase mb-3 contacttitle">
         contactez <span style={styleSpan}>nous</span>
       </h1>
-      <div className="col-8">
-        <div className="card card-0">
+      <div className="col-8" style={{position:"relative"}}>
+        <div className="bluerect"></div>
+        <div className="card contactcard">
           <form>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold mb-3">Nom :</h3>{" "}
-              <input type="text" class="form-control" placeholder="Votre nom" />
+              <input type="text" class="form-control contactinput" placeholder="Nom" />
             </div>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold mb-3">Email :</h3>{" "}
               <input
                 type="email"
-                class="form-control"
-                placeholder="Votre email"
+                class="form-control contactinput"
+                placeholder="Email"
               />
             </div>
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold mb-3">Sujet :</h3>{" "}
               <input
                 type="text"
-                class="form-control"
-                placeholder="Votre sujet"
+                class="form-control contactinput"
+                placeholder="Sujet"
               />
             </div>{" "}
             <div class="form-group mb-3">
-              <h3 className="font-weight-bold mb-3">Message :</h3>{" "}
               <textarea
-                class="form-control"
-                placeholder="Votre message"
+                class="form-control contactinput"
+                placeholder="Message"
                 style={{ minHeight: "10em" }}
               ></textarea>
             </div>
             <button
               type="submit"
-              class="btn btn-light"
+              class="btn contactbutton"
               style={{ width: "100%" }}
             >
               Envoyer

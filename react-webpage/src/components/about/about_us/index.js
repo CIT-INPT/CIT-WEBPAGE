@@ -3,10 +3,10 @@ import "./index.scss";
 const AboutUs = () => {
   return (
     <div
-      className="container d-flex flex-column align-items-center homeabout_us"
+      className="container d-flex flex-column align-items-center about_us"
       id="about_us"
     >
-      <h1 className="display-4 text-uppercase title">About us</h1>
+      <h1 className="display-4 text-uppercase abouttitle">About <span className="spancolor">us</span></h1>
       <p className="h4 desc">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quo
         quod impedit aperiam? Vitae enim, asperiores tempora sit soluta saepe

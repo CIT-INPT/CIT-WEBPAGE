@@ -1,4 +1,4 @@
-import AboutUs from "../home/about_us";
+import AboutUs from "./about_us";
 import MembresExecutifs from "./membres_exec";
 import NosCellules from "./nos_cellules";
 

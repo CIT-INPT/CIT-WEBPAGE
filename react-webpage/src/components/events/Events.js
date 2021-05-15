@@ -1,14 +1,14 @@
 import JNJD_1 from "../../assets/jnjd_pics/1.jpg";
 import JNJD_2 from "../../assets/jnjd_pics/2.jpg";
 import JNJD_3 from "../../assets/jnjd_pics/3.jpg";
-
+import './index.scss'
 const Events = () => {
   return (
     <div
       className="container d-flex flex-column align-items-center"
-      style={{ marginTop: "10em", marginBottom: "6em" }}
+      style={{ marginTop: "200px", marginBottom: "6em" }}
     >
-      <h1 className="display-4 text-uppercase mb-5">
+      <h1 className="display-4 text-uppercase mb-5 eventstitle">
         Nos <span style={styleSpan}>événements</span>
       </h1>
       <div className="container">

@@ -6,7 +6,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Partners from "./components/partners/Partners";
 import Events from "./components/events/Events";
-import Contact from "./components/contact/Contact";
+import Contact from "./components/contact";
 
 // On définit hna la structure de l'app
 function App() {
