@@ -27,7 +27,7 @@ const NosPartenaires = () => {
             type="button"
             class="btn button"
             style={{ backgroundColor: "#11bbf5" }}
-            to="/cellules"
+            to="/partners"
           >
             VOIR PLUS
           </Link>

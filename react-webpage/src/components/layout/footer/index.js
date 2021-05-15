@@ -36,10 +36,10 @@ const Footer = (props) => {
           </div>
           <div className="Footer-Column">
             <div className="Footer-Heading">Events :</div>
-            <CustomLink theme={theme} to="/IDEH/">
+            <CustomLink theme={theme} to="/events">
               IDEH
             </CustomLink>
-            <CustomLink theme={theme} to="/JNJD/">
+            <CustomLink theme={theme} to="/events">
               JNJD
             </CustomLink>
           </div>
