@@ -43,43 +43,44 @@ const Footer = (props) => {
               JNJD
             </CustomLink>
           </div>
-          <div className="Footer-icons">
-            <div className="Footer-Heading">
-              Get in touch by following us on social media :
+          <div className="Footer-Column">
+            <div className="Footer-icons">
+              <div className="Footer-Heading">
+                Get in touch by following us on social media :
             </div>
-            <div className="FooterIcons">
-              <a target="_" href="https://www.facebook.com/CIT.INPT">
-                <FaFacebook
+              <div className="FooterIcons">
+                <a target="_" href="https://www.facebook.com/CIT.INPT">
+                  <FaFacebook
+                    className="icon"
+                    size="2.5em"
+                    color="#0a4996"
+                  ></FaFacebook>
+                </a>
+                <a target="_" href="https://www.instagram.com/cit.inpt/">
+                  <FaInstagram
+                    className="icon"
+                    size="2.5em"
+                    color="#c20079"
+                  ></FaInstagram>
+                </a>
+                <a
                   className="icon"
-                  size="2.5em"
-                  color="#0a4996"
-                ></FaFacebook>
-              </a>
-              <a target="_" href="https://www.instagram.com/cit.inpt/">
-                <FaInstagram
-                  className="icon"
-                  size="2.5em"
-                  color="#c20079"
-                ></FaInstagram>
-              </a>
-              <a
-                className="icon"
-                target="_"
-                href="https://www.linkedin.com/company/cit-inpt"
-              >
-                <FaLinkedin
-                  className="icon"
-                  size="2.5em"
-                  color="#01649b"
-                ></FaLinkedin>
-              </a>
+                  target="_"
+                  href="https://www.linkedin.com/company/cit-inpt"
+                >
+                  <FaLinkedin
+                    className="icon"
+                    size="2.5em"
+                    color="#01649b"
+                  ></FaLinkedin>
+                </a>
+              </div>
             </div>
           </div>
-
           <div className="Footer-Column">
-            <Link className="navbar-brand" to="/">
+            <Link className="Footer-brand" to="/">
               <img
-                src={theme === "dark" ? citlogo_white : citlogo_dark}
+                src={citlogo_white}
                 width="200"
                 height="200"
                 alt=""
@@ -87,8 +88,15 @@ const Footer = (props) => {
             </Link>
           </div>
         </div>
+        <hr />
+        <div className="Footer-Heading">
+          <p>
+            © CIT INPT {new Date().getFullYear()} &ensp;|&ensp;
+          <a className="FooterLink" href="mailto: contact@cit.com" >contact@cit.com</a>
+          </p>
+        </div>
       </div>
-    </div>
+    </div >
   );
 };
 
@@ -97,10 +105,16 @@ const Footer = (props) => {
  */
 const CustomLink = ({ theme, to, children }) => {
   return (
-    <Link className="FooterLink" style={{ color: "white" }} to={to}>
+    <Link
+      className="FooterLink"
+      to={to}
+    >
       {children}
     </Link>
   );
 };
+
+
+
 
 export default Footer;
